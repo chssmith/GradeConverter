@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public String convertNumberToLetterGrade(int userGrade) {
         String letterGrade = "F";
-        if(userGrade > 90) {
+        if(userGrade >= 90) {
             letterGrade = "A";
         } else if (userGrade > 80) {
             letterGrade = "B";

@@ -16,4 +16,10 @@ public class GradeConverstionUnitTest {
         MainActivity testActivity = new MainActivity();
         assertEquals("A", testActivity.convertNumberToLetterGrade(100));
     }
+
+    @Test
+    public void gradeConversion_BoundaryA_ReturnsA() throws Exception {
+        MainActivity testActivity = new MainActivity();
+        assertEquals("A", testActivity.convertNumberToLetterGrade(90));
+    }
 }
